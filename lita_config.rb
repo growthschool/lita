@@ -3,7 +3,7 @@ Lita.configure do |config|
   config.robot.name = "Lita"
 
   # The locale code for the language to use.
-   config.robot.locale = I18n.locale
+  #  config.robot.locale = I18n.locale
 
   # The severity of messages to log. Options are:
   # :debug, :info, :warn, :error, :fatal
