@@ -10,7 +10,7 @@ Lita.configure do |config|
   # Messages at the selected level and above will be logged.
   config.robot.log_level = :info
   config.robot.adapter = :slack
-  config.adapters.slack.token = "xoxb-126406817969-4zuLHBcbiT5xKkip5nEmw2kp"
+  config.adapters.slack.token = ENV["SLACK_TOKEN"] || "xoxb-126406817969-4zuLHBcbiT5xKkip5nEmw2kp"
   config.redis[:url] = ENV["REDISTOGO_URL"] || 'redis://redistogo:98589b605b2aa58e2c2afac974448273@viperfish.redistogo.com:11759/'
   config.http.port = ENV["PORT"] || 3000
 
@@ -21,7 +21,7 @@ Lita.configure do |config|
 
   # The adapter you want to connect with. Make sure you've added the
   # appropriate gem to the Gemfile.
-  config.robot.adapter = :shell
+  # config.robot.adapter = :shell
 
   ## Example: Set options for the chosen adapter.
   # config.adapter.username = "myname"
