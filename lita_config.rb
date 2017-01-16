@@ -12,7 +12,7 @@ Lita.configure do |config|
   config.robot.adapter = :slack
   config.adapters.slack.token = "xoxb-126406817969-4zuLHBcbiT5xKkip5nEmw2kp"
   config.redis[:url] = ENV["REDISTOGO_URL"] = 'redis://redistogo:98589b605b2aa58e2c2afac974448273@viperfish.redistogo.com:11759/'
-  config.http.port = ENV["PORT"]
+  # config.http.port = ENV["PORT"]
 
   # An array of user IDs that are considered administrators. These users
   # the ability to add and remove other users from authorization groups.
